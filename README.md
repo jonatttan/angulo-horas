@@ -10,7 +10,9 @@ Obter a medida do ângulo em graus entre o ponteiro de hora em relação ao de m
 
 1. Computador com Python e navegador instalado e atualizado;
 
-2. Bibliotecas utilizadas no projeto estão listadas no arquivo nomeado requirements.txt
+2. Bibliotecas utilizadas no projeto estão listadas no arquivo nomeado requirements.txt;
+
+3. Base de dados do PostgreSQL (de preferência).
 
    
 
@@ -22,9 +24,11 @@ Obter a medida do ângulo em graus entre o ponteiro de hora em relação ao de m
 
 3. Navegue até o repositório clonado;
 
-4. Rode com o comando "python manage.py runserver";
+4. Alimente o arquivo secrets.json de acordo com as configurações de sua base de dados;
 
-5. Acesse por navegador de sua referência no endereço http://localhost:8000/v1/rest/clock/ (deverá ser apresentada a API do Django REST framework em Angulo List com os cadastros).
+5. Rode com o comando "python manage.py runserver";
+
+6. Acesse por navegador de sua referência no endereço http://localhost:8000/v1/rest/clock/ (deverá ser apresentada a API do Django REST framework em Angulo List com os cadastros).
 
    
 
