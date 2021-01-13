@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Angulo
-from .serializers import AnguloSerializer
+from .serializers import AnguloSerializer, AllAnguloSerializer
 from django.http import Http404
 from rest_framework import status
 from rest_framework.views import APIView
@@ -56,6 +56,6 @@ class AnguloList(APIView):
     def get(self, request, format=None):
         get_data = request.query_params
         angulos = Angulo.objects.all()
-        serializer = AnguloSerializer(angulos, many=True)
+        serializer = AllAnguloSerializer(angulos, many=True)
         return Response(serializer.data)
 
